@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Académico | ICKW Smart Campus</title>
+    
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fuente institucional complementaria de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR INSTITUCIONAL -->
+    <div class="top-bar">
+        <span>Instituto Católico Karol Wojtyla</span>
+        <span>Plataforma Oficial del Modelo OSI</span>
+    </div>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header class="institutional-header">
+        <div class="header-content">
+            <img src="img/logo.jpeg" alt="Logo ICKW">
+            <div class="header-titles">
+                <span class="institution-subtitle">Portal de Arquitectura de Redes</span>
+                <h1>ICKW Smart Campus</h1>
+            </div>
+        </div>
+        <div class="header-badge">
+            <span>Versión 2.0</span>
+            <small>Sistema Activo</small>
+        </div>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="institutional-nav">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="capa-1-fisica.html">Capa 1: Física</a></li>
+            <li><a href="capa-2-enlace.html">Capa 2: Enlace</a></li>
+            <li><a href="capa-3-red.html">Capa 3: Red</a></li>
+            <li><a href="capa-4-transporte.html">Capa 4: Transporte</a></li>
+            <li><a href="capa-5-sesion.html">Capa 5: Sesión</a></li>
+            <li><a href="capa-6-presentacion.html">Capa 6: Presentación</a></li>
+            <li><a href="capa-7-aplicacion.html">Capa 7: Aplicación</a></li>
+        </ul>
+    </nav>
+
+    <!-- CARRUSEL INSTITUCIONAL -->
+    <section class="carousel-container">
+        <div class="carousel-slides">
+            <div class="slide active">
+                <img src="img/Inicio de cables.jpeg" alt="Inicio de cables categoria 5">
+                <div class="caption">
+                    <span class="caption-tag">Infraestructura</span>
+                    <h3>Inicio de cables categoria 5</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/cables categoria 5.jpeg" alt="Cables categoria 5">
+                <div class="caption">
+                    <span class="caption-tag">Tecnología</span>
+                    <h3>Cables categoria 5</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/Probador de cables.png" alt="Prueba de Cables">
+                <div class="caption">
+                    <span class="caption-tag">Innovación Educativa</span>
+                    <h3>Probador de cables</h3>
+                </div>
+            </div>
+        </div>
+
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="dots-container">
+            <span class="dot active-dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- Sección de Bienvenida Ejecutiva -->
+        <section class="executive-card">
+            <div class="card-header-tag">Documento Institucional de Referencia</div>
+            <h2>Bienvenido a ICKW Smart Campus</h2>
+            <p>
+                <strong>ICKW Smart Campus</strong> es una plataforma digital de carácter académico e interactivo, desarrollada bajo los estándares del Bachillerato Técnico en Desarrollo de Software del <strong>Instituto Católico Karol Wojtyla</strong>. Este portal está concebido como un recurso metodológico avanzado para el estudio analítico, la comprensión estructural y la aplicación práctica de los niveles que componen el <em>Modelo de Interconexión de Sistemas Abiertos (Modelo OSI)</em>.
+            </p>
+        </section>
+
+        <!-- Sección: Introducción al Modelo OSI -->
+        <section class="content-section">
+            <h3>Marco Conceptual: Introducción al Modelo OSI</h3>
+            <p>
+                El <strong>Modelo OSI</strong> (Open Systems Interconnection) constituye el marco normativo de referencia universal de 7 capas, establecido por la Organización Internacional de Normalización (ISO). Su propósito fundamental es estandarizar la interoperabilidad lógica y física entre sistemas informáticos heterogéneos, garantizando una comunicación fluida y segura a través de redes de datos.
+            </p>
+            <p>
+                Cada nivel opera de manera modular, gestionando procesos específicos que van desde el soporte físico de transmisión hasta la interacción directa con las aplicaciones del usuario final.
+            </p>
+
+            <h4 class="subheading-title">Arquitectura de las 7 Capas del Modelo OSI</h4>
+            <div class="osi-grid">
+                <div class="osi-item">
+                    <span class="layer-number">Capa 1</span>
+                    <strong>Física:</strong> Transmisión de bits y señales a través de medios físicos (cableado estructurado, fibra óptica, radiofrecuencia).
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 2</span>
+                    <strong>Enlace de Datos:</strong> Transferencia confiable de tramas entre nodos adyacentes mediante direccionamiento físico (MAC).
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 3</span>
+                    <strong>Red:</strong> Enrutamiento de paquetes y direccionamiento lógico (IP) a través de interredes globales.
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 4</span>
+                    <strong>Transporte:</strong> Gestión de transporte extremo a extremo, control de flujo y fiabilidad mediante protocolos como TCP y UDP.
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 5</span>
+                    <strong>Sesión:</strong> Apertura, administración y cierre de sesiones de comunicación cooperativa entre aplicaciones.
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 6</span>
+                    <strong>Presentación:</strong> Traducción sintáctica, compresión y cifrado de la estructura de datos procesados.
+                </div>
+                <div class="osi-item">
+                    <span class="layer-number">Capa 7</span>
+                    <strong>Aplicación:</strong> Servicios de red e interfaces directas orientadas al usuario final (HTTP, DNS, SMTP).
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Exploración del Portal por Capas -->
+        <section class="content-section">
+            <h3>Módulos de Exploración Académica</h3>
+            <p class="section-subtitle">Seleccione una capa para acceder a las especificaciones técnicas, diagramas de hardware/software y casos de estudio aplicados a nuestra institución:</p>
+
+            <div class="modules-grid">
+                <article class="module-card">
+                    <h4>Capa 1: Física</h4>
+                    <p>Infraestructura de cableado, armarios de telecomunicaciones y puntos de acceso inalámbrico del campus.</p>
+                    <a href="capa-1-fisica.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 2: Enlace de Datos</h4>
+                    <p>Funcionamiento de switches gestionables, segmentación de VLANs y control de tramas físicas.</p>
+                    <a href="capa-2-enlace.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 3: Red</h4>
+                    <p>Enrutamiento corporativo, asignación de subredes IP y políticas de salida a Internet.</p>
+                    <a href="capa-3-red.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 4: Transporte</h4>
+                    <p>Análisis de desempeño de segmentos de red, control de congestión y protocolos de sesión.</p>
+                    <a href="capa-4-transporte.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 5: Sesión</h4>
+                    <p>Sincronización y persistencia de conexiones lógicas en plataformas institucionales.</p>
+                    <a href="capa-5-sesion.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 6: Presentación</h4>
+                    <p>Mecanismos de codificación de caracteres, compresión y esquemas de cifrado SSL/TLS.</p>
+                    <a href="capa-6-presentacion.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+
+                <article class="module-card">
+                    <h4>Capa 7: Aplicación</h4>
+                    <p>Sistemas web, servicios en la nube institucional y protocolos de acceso de usuarios.</p>
+                    <a href="capa-7-aplicacion.html" class="module-link">Acceder al módulo &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA INSTITUCIONAL -->
+    <footer class="institutional-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Instituto Católico Karol Wojtyla</h4>
+                <p>Bachillerato Técnico en Desarrollo de Software</p>
+            </div>
+            <div class="footer-col">
+                <h4>Créditos del Proyecto</h4>
+                <p><strong>Equipo 1:</strong> Desarrollo e Implementación de Capa 1 (Física)</p>
+                <p>@ 2026 ICKW Smart Campus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DEL CARRUSEL -->
+    <script src="js/main.js"></script>
+</body>
+</html>
